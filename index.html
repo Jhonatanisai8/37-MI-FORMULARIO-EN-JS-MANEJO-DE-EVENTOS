@@ -50,7 +50,17 @@
         </div>
 
         <div>
-            <input type="button" value="Confirmar" onclick="verificar();seleccionarRol()">
+            <label for="idiomas">Idimas que Sabes: </label>
+            <div>
+                <input type="radio" name="idiomas" id="español">Español
+                <input type="radio" name="idiomas" id="ingles">Ingles
+            </div>
+
+            <p>Idioma que sabes: <input type="text" name="textMostarIdioma" id="textMostarIdioma"></p>
+        </div>
+
+        <div>
+            <input type="button" value="Confirmar" onclick="verificar();seleccionarRol();seleccionarIdioma()">
         </div>
     </form>
 </body>

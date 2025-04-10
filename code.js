@@ -52,3 +52,14 @@ function seleccionarRol() {
     document.getElementById('textMostarRol').value = rol
 
 }
+
+function seleccionarIdioma() {
+    let idioma = ''
+    if (document.getElementById('español').checked) {
+        idioma = 'Español'
+    }
+    if (document.getElementById('ingles').checked) {
+        idioma = 'Ingles'
+    }
+    document.getElementById('textMostarIdioma').value = idioma
+}
