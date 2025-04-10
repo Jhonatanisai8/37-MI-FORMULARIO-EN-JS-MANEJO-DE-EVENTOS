@@ -21,6 +21,22 @@
             <input type="password" id="password">
         </div>
         <br>
+        <div>
+            <label for="lenguajes">lenguajes de Programacion Preferidos</label>
+            <select name="lenguajes" id="lenguajes" onchange="seleccionarLenguaje()">
+                <option value="=SELECCIONAR=">=SELECCIONAR=</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="ruby">Ruby</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Indice Seleccionado: <input type="text" name="text01" id="text01"></p>
+            <p>Lenguaje Seleccionado: <input type="text" name="text02" id="text02"></p>
+            <p>Value Seleccionado: <input type="text" name="text03" id="text03"></p>
+        </div>
 
         <div>
             <input type="button" value="Confirmar" onclick="verificar()">
