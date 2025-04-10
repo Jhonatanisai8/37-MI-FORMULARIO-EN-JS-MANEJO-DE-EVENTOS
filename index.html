@@ -10,6 +10,7 @@
 
 <body>
     <form>
+        <h1>Formulario</h1>
         <div>
             <label for="userName">Ingrese Usuario: </label>
             <input type="text" id="userName">
@@ -39,7 +40,17 @@
         </div>
 
         <div>
-            <input type="button" value="Confirmar" onclick="verificar()">
+            <label for="rol">Rol que Cumples: </label>
+            <div>
+                <input type="checkbox" id="developer"> DESARROLLADOR <br>
+                <input type="checkbox" id="tester"> TESTER <br>
+                <input type="checkbox" id="manager"> MANAGER <br>
+            </div>
+            <p>Rol que cumples: <input type="text" name="textMostarRol" id="textMostarRol"></p>
+        </div>
+
+        <div>
+            <input type="button" value="Confirmar" onclick="verificar();seleccionarRol()">
         </div>
     </form>
 </body>
