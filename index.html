@@ -60,7 +60,17 @@
         </div>
 
         <div>
-            <input type="button" value="Confirmar" onclick="verificar();seleccionarRol();seleccionarIdioma()">
+            <label for="mensaje">Mensaje: </label>
+            <div>
+                <p>
+                    <textarea name="mensaje" id="mensaje" rows="10" cols="30">
+                    </textarea>
+                </p>
+            </div>
+        </div>
+        <div>
+            <input type="button" value="Confirmar"
+                onclick="verificar();seleccionarRol();seleccionarIdioma();invocarMensaje()">
         </div>
     </form>
 </body>

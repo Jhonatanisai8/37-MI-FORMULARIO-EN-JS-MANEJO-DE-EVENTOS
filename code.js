@@ -63,3 +63,11 @@ function seleccionarIdioma() {
     }
     document.getElementById('textMostarIdioma').value = idioma
 }
+
+function invocarMensaje() {
+    if (document.getElementById('mensaje').value.length > 100) {
+        alert('Mensaje muy extenso');
+    } else {
+        alert('Gracias');
+    }
+}
